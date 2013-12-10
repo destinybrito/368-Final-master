@@ -1,213 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,700);
 
-body {
-	font-family: 'Abel', sans-serif;
-    background: url("../img/seattle_skyline.jpeg") center no-repeat;
-}
-.container {
-    background: url("../img/cream_dust.png") repeat 0 0;
+html, body {
+  height:100%;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 25px;
 }
 
-/*==============================
-	Global
-==============================*/
+html {
+  background: url('../img/seattle_skyline.jpeg') fixed;
+  background-size: 100%;
+}
+
+div {
+  overflow: hidden;
+}
+
+a {
+  color: #322bff;
+  text-decoration: underline;
+  transition: 500ms;
+}
+a:hover {
+  color: #26a1ff;
+}
+
 p {
-	line-height: 24px;
+  padding: 0 5%;
 }
 
-.container {
-	margin: 0 auto;
-	width: 960px;
-}
- 
-
-article {
-	padding-top: 200px;
-}
- 
-/*==============================
-	Logo
-==============================*/
-
-	
-	
- 
- 
-/*==============================
-	Navigation
-==============================*/
-header {
-	position: relative;
-}
- 
-header li {
-	float: left;
-	list-style: none;
-	margin: 0 10px;
-}
- 
-/* Remove inherited margin on <ul> */
-header ul {
-	margin: 0;
-}
- 
-/* Push links far right w/o floats */
-nav li:nth-child(1) {
-	margin-left: 450px;
-}
- 
-nav {
-	background: #666;	
-	height: 64px;
-	position: absolute;
-	left: 0;
-	top: 42px;
-	width: 960px;
-	
-	/* CSS3 */
-	box-shadow: inset 0px 0px 10px 2px #333;
-}
- 
-nav a:link,
-nav a:visited {
-	color: #fff;
-	height: 64px;
-	display: block;
-	line-height: 64px;
-	text-align: center;	
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 128px;
-	
-	/*CSS 3*/
-	transition: margin-top .25s;
-}
- 
-nav a:hover, 
-nav a:active {
-	margin-top: 10px;
-}
- 
- 
-/*==============================
-	Navigation: Page Indicators
-==============================*/
-.about li:nth-child(1), 
-.students li:nth-child(2),
-.contact li:nth-child(3){
-	background: rgba(255,255,255,.15);
-}
- 
- 
-/*==============================
-	About Page
-==============================*/
-.about section {
-	float: left;
-	margin-left: 40px;
-	width: 420px;
-}
- 
-.about section h2 {
-	font-family: 'lane_-_narrowregular', sans-serif;
-	margin-left: -40px;
+img {
+  box-shadow: 0px 0px 4px #000;
 }
 
- 
-/*==============================
-	Students Page
-==============================*/
-.members li {
-	float: left;
-	list-style: none;
-	margin: 20px 0 0 20px;
-	position: relative;
-	width: 440px;
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 1%;
+  overflow: hidden;
+  height: 55px;
 }
- 
-.members h3 {
-	background: #666;
-	bottom: 20px;
-	color: #fff;
-	left: -20px;
-	padding: 10px;
-	position: absolute;
-	
-	/* CSS 3*/
-	box-shadow: 0 10px 20px #222;
+#header img {
+  float: left;
+  box-shadow: none;
 }
- 
-/* Ribbon Triangle */
-.members h3:after {
-	content: "";
-	position: absolute;
-	display: block;
-	left: 0;
-	border-style: solid;
-	border-color: #333 transparent transparent transparent;
-	bottom: -39px;
-	border-width: 20px;
-	z-index: -1;
-	
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 10px;
+  margin-top: 15px;
 }
- 
-.members img {
-	width: 420px;
-}
- 
- 
-/*==============================
-	Contact Page
-==============================*/
-.contact article section {
-	float: left;
-	margin-left: 10px;
-	width: 310px;
-}
- 
-.contact td {
-	padding: 10px 4px;
-}
- 
-.contact tr:nth-child(even)  {
-	background: #ccc;
-}
- 
-label {
-	display: block;
-}
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+#header ul li {
+  float: left;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/*
-        Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
+.fullscreen {
+  height: 95%;
   position: relative;
 }
-.gallery .item {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-  background: #4d87e2;
-}
-.gallery .controls {
+.fullscreen .header {
   position: absolute;
   bottom: 0;
+  text-align: center;
   width: 100%;
-  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
 }
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
+
+.white {
+  background: #eeeeec;
+  padding: 0 5%;
+}
+.nobg {
+  background: none;
+  padding: 0 5%;
+  color: #fff;
+  text-shadow: 0px 0px 4px #000;
+}
+.semitrans {
+  background: rgba(255, 255, 255, .5);
+  padding: 0 5%;
+}
+.dark {
+  color: #eeeeec;
+  background: #010105;
+  padding: 0 5%;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.floatleft {
+  float: left;
+  margin: 2%;
+}
+.floatright {
+  float: right;
+  margin 2%;
+}
+
+.more {
   text-align: center;
+  font-size: 17px;
+}
+.more a {
+  color: #aaa;
   text-decoration: none;
-  transition: color .1s;
+  cursor: pointer;
+}
+.more a:hover {
+  color: #777;
 }
