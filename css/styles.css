@@ -2,18 +2,40 @@
 
 html, body {
   height:100%;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 25px;
 }
+h1 {
+	font-size: 4em;
+	}
 
 html {
-  background: url('../img/seattle_skyline.jpeg') fixed;
+  background: url('../img/seattle_skyline.jpeg') fixed no-repeat;
   background-size: 100%;
 }
 
 div {
   overflow: hidden;
 }
+
+nav a:hover, 
+nav a:active {
+	margin-top: 10px;
+}
+nav a:link,
+nav a:visited {
+	color: #fff;
+	height: 64px;
+	display: block;
+	line-height: 64px;
+	text-align: center;	
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 128px;
+	
+	/*CSS 3*/
+	transition: margin-top .25s;
+}	
 
 a {
   color: #322bff;
@@ -92,6 +114,7 @@ img {
 }
 
 .floatleft {
+
   float: left;
   margin: 2%;
 }
