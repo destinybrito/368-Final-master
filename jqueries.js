@@ -1,0 +1,1 @@
+$.backstretch("../img/seattle_skyline.jpeg");
